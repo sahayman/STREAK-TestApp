@@ -11,7 +11,8 @@ import STREAK
 struct ContentView: View {
     var body: some View {
         VStack {
-            ForEach(allSoundFiles()) { SoundButton($0)}
+            SoundButton(.tada)
+            SoundButton(.ding)
         }
         .padding()
     }
