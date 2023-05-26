@@ -10,8 +10,21 @@ import SwiftUI
 @main
 struct STREAK_TestAppApp: App {
     var body: some Scene {
+        @AppStorage("selectedTab") var selectedTab = "Airports"
         WindowGroup {
-            ContentView()
+            TabView(selection: $selectedTab) {
+                Airports()
+                    .tabItem {
+                        Label("Airports", systemImage:"airplane.circle")
+                    }
+                    .tag("Airports")
+                
+                Sounds()
+                    .tabItem {
+                        Label("Sounds", systemImage:"speaker")
+                    }
+                    .tag("Sounds")
+            }
         }
     }
 }
