@@ -11,6 +11,8 @@
 		7D35B1462A212CAD0003AEEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D35B1452A212CAD0003AEEB /* ContentView.swift */; };
 		7D35B1482A212CAE0003AEEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D35B1472A212CAE0003AEEB /* Assets.xcassets */; };
 		7D35B14B2A212CAE0003AEEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D35B14A2A212CAE0003AEEB /* Preview Assets.xcassets */; };
+		7D7AF1C52A212F55007D8E40 /* STREAK in Frameworks */ = {isa = PBXBuildFile; productRef = 7D7AF1C42A212F55007D8E40 /* STREAK */; };
+		7D7AF1C82A2131A2007D8E40 /* Rimshot.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D7AF1C72A21317A007D8E40 /* Rimshot.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		7D35B1452A212CAD0003AEEB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7D35B1472A212CAE0003AEEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7D35B14A2A212CAE0003AEEB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7D7AF1C62A212F79007D8E40 /* STREAK */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = STREAK; path = ../STREAK; sourceTree = "<group>"; };
+		7D7AF1C72A21317A007D8E40 /* Rimshot.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rimshot.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D7AF1C52A212F55007D8E40 /* STREAK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +40,7 @@
 		7D35B1372A212CAD0003AEEB = {
 			isa = PBXGroup;
 			children = (
+				7D7AF1C62A212F79007D8E40 /* STREAK */,
 				7D35B1422A212CAD0003AEEB /* STREAK+TestApp */,
 				7D35B1412A212CAD0003AEEB /* Products */,
 			);
@@ -53,6 +59,7 @@
 			children = (
 				7D35B1432A212CAD0003AEEB /* STREAK_TestAppApp.swift */,
 				7D35B1452A212CAD0003AEEB /* ContentView.swift */,
+				7D7AF1C72A21317A007D8E40 /* Rimshot.m4a */,
 				7D35B1472A212CAE0003AEEB /* Assets.xcassets */,
 				7D35B1492A212CAE0003AEEB /* Preview Content */,
 			);
@@ -83,6 +90,9 @@
 			dependencies = (
 			);
 			name = "STREAK+TestApp";
+			packageProductDependencies = (
+				7D7AF1C42A212F55007D8E40 /* STREAK */,
+			);
 			productName = "STREAK+TestApp";
 			productReference = 7D35B1402A212CAD0003AEEB /* STREAK+TestApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +121,9 @@
 				Base,
 			);
 			mainGroup = 7D35B1372A212CAD0003AEEB;
+			packageReferences = (
+				7D7AF1C32A212F55007D8E40 /* XCRemoteSwiftPackageReference "STREAK" */,
+			);
 			productRefGroup = 7D35B1412A212CAD0003AEEB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D7AF1C82A2131A2007D8E40 /* Rimshot.m4a in Resources */,
 				7D35B14B2A212CAE0003AEEB /* Preview Assets.xcassets in Resources */,
 				7D35B1482A212CAE0003AEEB /* Assets.xcassets in Resources */,
 			);
@@ -339,6 +353,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7D7AF1C32A212F55007D8E40 /* XCRemoteSwiftPackageReference "STREAK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.pie.apple.com/shayman/STREAK";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7D7AF1C42A212F55007D8E40 /* STREAK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D7AF1C32A212F55007D8E40 /* XCRemoteSwiftPackageReference "STREAK" */;
+			productName = STREAK;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7D35B1382A212CAD0003AEEB /* Project object */;
 }
