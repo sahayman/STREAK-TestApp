@@ -16,7 +16,7 @@ struct Sounds: View {
             ForEach(allSoundFiles() ) {
                 SoundButton($0)
             }
-            ForEach(1...20, id:\.self ) {
+            ForEach(1...200, id:\.self ) {
                 SpeechButton("\($0)")
             }
             

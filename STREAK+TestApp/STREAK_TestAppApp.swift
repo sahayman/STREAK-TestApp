@@ -24,6 +24,11 @@ struct STREAK_TestAppApp: App {
                         Label("Sounds", systemImage:"speaker")
                     }
                     .tag("Sounds")
+                Attractions()
+                    .tabItem {
+                        Label("Attractions", systemImage:"map")
+                    }
+                    .tag("Attractions")
             }
         }
     }
