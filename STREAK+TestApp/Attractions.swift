@@ -36,6 +36,7 @@ struct Attractions: View {
                 MapAnnotation(coordinate: result.coordinate ) {
                     Button {
                             selectedAttraction = result
+                        region = selectedAttraction.region
                     } label: {
                         Image(systemName: result == selectedAttraction ? "mappin.circle.fill" : "mappin.circle")
                             .resizable()
