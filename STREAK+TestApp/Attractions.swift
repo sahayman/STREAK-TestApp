@@ -9,11 +9,11 @@ import SwiftUI
 import STREAK
 import MapKit
 
-let attraction = TouristAttraction.EiffelTower
+let attraction = TouristAttraction.CNTower
 struct Attractions: View {
     @State var region = attraction.region
     @State var selectedAttraction = attraction
-    
+    @StateObject var manager = CurrentLocation()
     
     var body: some View {
         VStack {
@@ -27,7 +27,11 @@ struct Attractions: View {
                 print("Change of attraction to \($0.name)")
                 region = $0.region
             }
-            Map(coordinateRegion: $region, annotationItems: TouristAttraction.allCases ) { result in
+            
+            // Map with annotations at all tourist attractions;
+            // each annotation is a Button that changes the selected attraction
+            
+            Map(coordinateRegion: $region,showsUserLocation: true, annotationItems: TouristAttraction.allCases ) { result in
                 
                 MapAnnotation(coordinate: result.coordinate ) {
                     Button {
