@@ -29,6 +29,12 @@ struct STREAK_TestAppApp: App {
                         Label("Attractions", systemImage:"map")
                     }
                     .tag("Attractions")
+                
+                FaceMarks()
+                    .tabItem {
+                        Label("Face", systemImage:"face.smiling")
+                    }
+                    .tag("FaceMarks")
             }
         }
     }

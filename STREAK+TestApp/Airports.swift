@@ -58,8 +58,8 @@ struct AirportMap: View {
     var body: some View {
         VStack (alignment: .leading) {
 
-            Map(coordinateRegion: $region, annotationItems:[airport] ) {
-                MapMarker(coordinate: $0.coord)
+            Map(bounds:.init(centerCoordinateBounds: region, minimumDistance: 400_000)) {
+                Marker(airport.iata, coordinate:airport.coord)
             }
             Text("\(airport.city), \(airport.country)")
                 .font(.headline)

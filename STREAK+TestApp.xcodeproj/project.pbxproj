@@ -15,6 +15,7 @@
 		7D7AF1C82A2131A2007D8E40 /* Rimshot.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7D7AF1C72A21317A007D8E40 /* Rimshot.m4a */; };
 		7D7AF1CA2A21427A007D8E40 /* Sounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7AF1C92A21427A007D8E40 /* Sounds.swift */; };
 		7D7AF1CC2A2146C8007D8E40 /* Attractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D7AF1CB2A2146C8007D8E40 /* Attractions.swift */; };
+		7DE6645E2A4E26C3008C1FB8 /* FaceMarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE6645D2A4E26C3008C1FB8 /* FaceMarks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		7D7AF1C72A21317A007D8E40 /* Rimshot.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = Rimshot.m4a; sourceTree = "<group>"; };
 		7D7AF1C92A21427A007D8E40 /* Sounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sounds.swift; sourceTree = "<group>"; };
 		7D7AF1CB2A2146C8007D8E40 /* Attractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attractions.swift; sourceTree = "<group>"; };
+		7DE6645D2A4E26C3008C1FB8 /* FaceMarks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceMarks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			children = (
 				7D35B1432A212CAD0003AEEB /* STREAK_TestAppApp.swift */,
 				7D7AF1CB2A2146C8007D8E40 /* Attractions.swift */,
+				7DE6645D2A4E26C3008C1FB8 /* FaceMarks.swift */,
 				7D7AF1C92A21427A007D8E40 /* Sounds.swift */,
 				7D35B1452A212CAD0003AEEB /* Airports.swift */,
 				7D7AF1C72A21317A007D8E40 /* Rimshot.m4a */,
@@ -111,7 +114,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					7D35B13F2A212CAD0003AEEB = {
 						CreatedOnToolsVersion = 14.3;
@@ -160,6 +163,7 @@
 				7D7AF1CC2A2146C8007D8E40 /* Attractions.swift in Sources */,
 				7D7AF1CA2A21427A007D8E40 /* Sounds.swift in Sources */,
 				7D35B1462A212CAD0003AEEB /* Airports.swift in Sources */,
+				7DE6645E2A4E26C3008C1FB8 /* FaceMarks.swift in Sources */,
 				7D35B1442A212CAD0003AEEB /* STREAK_TestAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,6 +207,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -217,7 +222,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -263,6 +268,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -271,7 +277,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -292,6 +298,7 @@
 				DEVELOPMENT_TEAM = WG6GA25BQY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Test app uses front camera for face landmarks";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Shows your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -322,6 +329,7 @@
 				DEVELOPMENT_TEAM = WG6GA25BQY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Test app uses front camera for face landmarks";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Shows your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
